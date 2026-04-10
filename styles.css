@@ -1,0 +1,160 @@
+/* 1. RESET Y ESTILO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Color gris claro de fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. ENCABEZADO Y MENÚ */
+header {
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+list-style: none; /* Quita los puntos negros */
+    margin-top: 15px;
+    display: flex;    /* Pone los elementos en fila */
+    justify-content: center; /* Centra los botones */
+    gap: 15px;
+}
+nav ul li {
+    display: inline; /* Pone los links en fila horizontal */
+    margin: 0 15px;
+}
+
+nav a {
+display: inline-block; /* Permite que el botón tenga ancho y alto */
+    color: white;
+    text-decoration: none; /* Quita el subrayado */
+    background-color: #027cfd; /* Color azul del botón */
+    padding: 10px 20px;    /* Espacio interno: arriba/abajo y lados */
+    border-radius: 5px;    /* Bordes redondeados */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #fd0202; /* Cambia a color rojo */
+    transform: scale(1.1);     /* Crece de tamaño */
+}
+/* 3. CONTENEDOR Y SECCIONES */
+main {
+    max-width: 800px; /* Evita que el texto sea demasiado ancho */
+    margin: 20px auto; /* Centra las secciones */
+    padding: 10px;
+}
+
+section {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff; /* Títulos en color azul */
+}
+
+/* 4. CLASE LISTA-PROYECTOS */
+.lista-proyectos ul {
+    list-style: none; /* Limpia los puntos de la lista de proyectos */
+}
+
+.lista-proyectos li {
+    padding: 5px 0;
+}
+
+.lista-proyectos a {
+display: inline-block;    /* Permite darles forma de botón */
+    color: white;             /* Color del texto */
+    background-color: #027cfd; /* Verde (color típico de GitHub/éxito) */
+    padding: 10px 20px;       /* Espacio interno para que parezca botón */
+    text-decoration: none;    /* Quita el subrayado */
+    border-radius: 5px;       /* Bordes redondeados */
+    margin-bottom: 10px;      /* Espacio entre un botón y otro */
+    transition: 0.3s;         /* Velocidad de la animación */
+
+}
+
+.lista-proyectos a:hover {
+    background-color: #fd0202; /* Un verde más oscuro al pasar el mouse */
+    transform: scale(1.1);    /* Crece un poquito (5%) */
+}
+
+/* 5. FORMULARIO Y SUS CLASES */
+.formulario-grup {
+    margin-bottom: 15px; /* Espacio entre el nombre y el mensaje */
+}
+
+input, textarea {
+    width: 100%; /* Que ocupen todo el ancho disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 6. PIE DE PÁGINA */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+/* 5. GALERÍA DE MASCOTAS (Cartas una al lado de la otra) */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que bajen si no caben */
+    justify-content: center;
+    gap: 25px;
+    background: transparent; /* Quita el fondo blanco de la sección */
+    box-shadow: none;        /* Quita la sombra de la sección */
+}
+
+#galeria article {
+    background: white;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#galeria article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;     /* Recorta la imagen para que no se estire */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#galeria article:hover {
+    border-color: #ff0000;
+    transform: translateY(-10px); /* Efecto de que la carta "flota" */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+

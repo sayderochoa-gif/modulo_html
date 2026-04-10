@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="styles.css">
+    <title>Sayder Jr | Mi Portafolio</title>
 </head>
 
+<link rel="stylesheet" href="styles.css">
+
 <body>
+    
     <header>
-        <h1>Sayder Junior Carreno Ochoa</h1>
+        <h1>Sayder Junior Carreño Ochoa</h1>
         <nav>
             <ul>
-                <li><a href="#">About me</a></li>
+                <li><a href="#Sobre-mi">Sobre mi</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="mascotas.html" target="_blank">Mis Mascotas</a></li>
 
-                <p>Sayder is a 21-year-old young man from the city of Barranquilla, Colombia. 
-                    From an early age, he showed a strong interest in reading and writing, 
-                    which led him to develop skills in the fields of literature and communication. 
-                    He is currently in a training process in the area of software development, 
-                    and is characterized by his desire to understand what he does and to learn 
-                    how to structure his code in a logical and practical way. Although he has made 
-                    mistakes along the way, he has demonstrated consistency in his learning and strives 
-                    to improve every day.  
-                </p>
-
-                <li><a href="https://github.com/dashboard" target="_blank"> Go to projects</a></li>
-
-                <h4></h4>Shall we contact you?</h4>
-                    <form>
-                        <label>Nombre</label>
-                        <input type="text" name="nombre">
-                        <label>Email</label>
-                        <input type="email" name="email">
-                        <button type="submit">Enviar</button>
-                    </form>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="Sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>Mi nombre es Sayder Carreño, soy un joven de 21 años originario de la ciudad de Barranquilla, Colombia. 
+                Desde temprana edad, mostré un gran interés por la lectura y la escritura, lo que me llevó a 
+                desarrollar habilidades en los campos de la literatura y la comunicación.
+                Actualmente me encuentro en un proceso de formación en el área de desarrollo de software, y me 
+                caracterizo por el deseo de comprender lo que hago y aprender a estructurar mi código de manera 
+                lógica y práctica.
+                Aunque he cometido errores en el camino, he demostrado constancia en mi aprendizaje y me esfuerzo 
+                por mejorar cada día.</p>
+        </section>
+
+        <section id="Proyectos">
+            <h2>Proyectos</h2>
+            <div class="lista-proyectos">
+            <ul>
+
+                <li><a href="https://github.com/sayderochoa-gif/EstadisticasPartido.git" target="_blank">Aplicación de Estadísticas de Partidos</a></li>
+                <li><a href="https://github.com/sayderochoa-gif/proyect_dragonb.git" target="_blank">Página Web de Dragon Ball (Personajes)</a></li>
+                <li><a href="https://github.com/sayderochoa-gif/ReportSales.git" target="_blank">Aplicación de Registro de Ventas</a></li>
+                <li><a href="https://github.com/sayderochoa-gif/Parking.git" target="_blank">Aplicación de Gestión de Parqueo</a></li>
+            </ul>
+            </div>
+        </section>
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda? Enviame un mensaje:</p>
+            <form>
+
+                <div class="fomulario-grup">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="formulario-grup">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sayder Junior Carreño Ochoa - Mi Portafolio - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
